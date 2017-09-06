@@ -1,0 +1,14 @@
+graph G {
+	run -- intr
+	intr -- runbl
+	runbl -- run
+	run -- kernel
+	kernel -- zombie
+	kernel -- runmem
+	sleep -- swap
+	kernel -- sleep
+	swap -- runswap
+	runswap -- new
+	runswap -- runmem
+	new -- runmem
+}

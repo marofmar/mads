@@ -1,0 +1,9 @@
+graph G {
+	run -- intr
+	intr -- runbl
+	runbl -- run
+	run -- kernel
+	kernel -- zombie
+	kernel -- runmem
+	slieep -- swap
+}

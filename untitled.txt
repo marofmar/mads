@@ -1,0 +1,18 @@
+# Section 1 Put-Call Parity
+
+* Call option: an option to buy assets at an agreed price on or before a particular date.
+* Put option: an option to sell assets at an agreed price on or before a particular date.
+* 콜 옵션과 풋 옵션의 가격 차이: 미래에 특정 자산을 미리 정한 가격으로 구입할 수 있는 권리가 지니는 가격과, 미래에 특정 자산을 미리 정한 가격으로 팔 수 있는 권리가 지니는 가격의 차이`
+* If Price(Call option) < Price(Put option) : (under the assumption that the strike price and the time to expiration is equal within the both)
+* 미래에 특정 자산을 과거에 정한 가격으로 팔 수 있는 권리가 그것을 살 수 있는 권리보다 비싸게 거래된다.
+- 이 자산의 가치가 낮아질 것으로 예상되어진다. 지금 10의 가격으로 팔 수 있는데, 나중에 되면 3밖에 못 받을 것. 
+* If Price(Call option) > Price(Put option): 나중에 특정 자산을 과거에 정한 가격으로 살 수 있는 것의 가치가 더 높다- > 이 자산은 현재보다 미래에 더 가치가 올라갈 것으로 여겨진다. 지금 이 물건을 10의 가격을 주고 살 수 있다면, 나중이 되면 17은 주어야 살 수 있게될 것이다. 따라서 지금 콜 옵션을 미리 사 두어서, 미래에 수익을 올리는 것을 목적할 수 있다. 
+* abs(Forward Price for the underlying asset - Strike price of the options): 자산의 미래 가격과 옵션의 행사 가격 차이. 만약에 콜옵션으로 1년 뒤 8을 주고서 그 시점에서 10의 가치를 지니는 자산을 거래할 수 있게 된다면, 여기서는 2만큼이 저 값에 해당하겠지.
+* the present value over the life of the options: 옵션 가격을 현재 가치로 환산했다는 뜻인가?  Present value of annuity 
+* abs(Forward price - Strike Price) * the present value over the life of options: 만일 자산 가격이 미래에 오르거나, 내려서 좌변의 값이 0이 아니라면, 
+* 여튼, 지금 풋 옵션과 콜 옵션의 가격 차이는, 미래에 내가 얻을 수 있는 이득을 현재가치 환산한 것과 그 값이 같다는 것
+
+ 
+# Section 2 Parity of Options on Stocks
+* Forward Price for the underlying asset을 현재가치 환산한 값 = 현재 주식 가격 - 기간 동안 받는 배당금을 모조리 현재가치 환산한 값들을 합친 값 
+* 순 가치와 같다고 볼 수 있으려나
